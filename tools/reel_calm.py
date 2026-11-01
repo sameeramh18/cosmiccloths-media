@@ -105,6 +105,7 @@ class Scene:
         s.blur = sp.get('blur', 0)
         if s.blur: s.img = s.img.filter(ImageFilter.GaussianBlur(s.blur))
         s.scrim = sp.get('scrim', 'top')                 # top | bottom | both | none
+        s.scrim_k = sp.get('scrim_k', 0.62)              # shade strength behind text (raise on bright skies)
         s.items = []
         cursor = None
         for it in sp.get('text', []):
@@ -118,7 +119,7 @@ class Scene:
         for y in range(H):
             top = max(0, 1 - y / 900) ** 1.5 if s.scrim in ('top', 'both') else 0
             bot = max(0, (y - 1000) / 920) ** 1.5 if s.scrim in ('bottom', 'both') else 0
-            g.putpixel((0, y), int(255 * min(1, 0.62 * max(top, bot) + s.dim)))
+            g.putpixel((0, y), int(255 * min(1, s.scrim_k * max(top, bot) + s.dim)))
         L = Image.new('RGBA', (W, H), (4, 4, 12, 255)); L.putalpha(g.resize((W, H))); return L
     def cam(s, t):
         p = ease((t - s.t0 + XF) / (s.t1 - s.t0 + 2 * XF)); a = s.amount
