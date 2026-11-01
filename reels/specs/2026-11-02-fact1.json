@@ -1,0 +1,188 @@
+{
+ "duration": 39.3,
+ "scenes": [
+  {
+   "t0": 0,
+   "t1": 8.3,
+   "bg": "b1-supernova.png",
+   "motion": "push",
+   "amount": 0.05,
+   "scrim": "top",
+   "text": [
+    {
+     "t": 0.3,
+     "text": "COSMIC FACT #1",
+     "style": "kicker",
+     "y": 330
+    },
+    {
+     "t": 0.6,
+     "text": "Every atom of iron in your blood",
+     "style": "white",
+     "size": 66,
+     "gap": 14
+    },
+    {
+     "t": 3.0,
+     "text": "was made inside a star.",
+     "style": "gold",
+     "size": 66
+    }
+   ]
+  },
+  {
+   "t0": 8.3,
+   "t1": 17.2,
+   "bg": "b1-supernova.png",
+   "motion": "pull",
+   "amount": 0.06,
+   "focus": [
+    0.5,
+    0.45
+   ],
+   "scrim": "bottom",
+   "punch": {
+    "at": 12.5,
+    "amount": 0.035
+   },
+   "graphics": [
+    {
+     "t": 9.0,
+     "kind": "tile",
+     "x": 540,
+     "y": 700,
+     "s": 230,
+     "top": "26",
+     "mid": "Fe",
+     "bot": "Iron"
+    }
+   ],
+   "text": [
+    {
+     "t": 9.6,
+     "text": "Giant stars forge iron in their cores",
+     "style": "white",
+     "size": 54,
+     "y": 1250,
+     "maxw": 860
+    },
+    {
+     "t": 12.5,
+     "text": "and scatter it when they explode.",
+     "style": "gold",
+     "size": 64,
+     "maxw": 860
+    }
+   ]
+  },
+  {
+   "t0": 17.2,
+   "t1": 26.5,
+   "bg": "b1-nebula.png",
+   "motion": "push",
+   "amount": 0.04,
+   "focus": [
+    0.4167,
+    0.8047
+   ],
+   "scrim": "top",
+   "graphics": [
+    {
+     "t": 19.5,
+     "kind": "path",
+     "pts": [
+      [
+       540,
+       640
+      ],
+      [
+       500,
+       1050
+      ],
+      [
+       450,
+       1420
+      ]
+     ]
+    },
+    {
+     "t": 20.0,
+     "kind": "label",
+     "text": "EARTH",
+     "x": 600,
+     "y": 1530,
+     "size": 30
+    }
+   ],
+   "text": [
+    {
+     "t": 17.9,
+     "text": "Billions of years later, that dust",
+     "style": "white",
+     "size": 54,
+     "y": 330,
+     "maxw": 860
+    },
+    {
+     "t": 21.3,
+     "text": "became our Sun, our planet, and you.",
+     "style": "gold",
+     "size": 64,
+     "maxw": 860
+    }
+   ]
+  },
+  {
+   "t0": 26.5,
+   "t1": 35.6,
+   "bg": "b1-nebula.png",
+   "motion": "push",
+   "amount": 0.07,
+   "focus": [
+    0.4167,
+    0.8047
+   ],
+   "scrim": "top",
+   "graphics": [
+    {
+     "t": 29.3,
+     "kind": "ring",
+     "x": 450,
+     "y": 1545,
+     "r": 150
+    },
+    {
+     "t": 29.6,
+     "kind": "label",
+     "text": "YOU ARE HERE",
+     "x": 560,
+     "y": 1330,
+     "size": 28
+    }
+   ],
+   "text": [
+    {
+     "t": 27.2,
+     "text": "You're not just looking at the universe.",
+     "style": "white",
+     "size": 54,
+     "y": 330,
+     "maxw": 860
+    },
+    {
+     "t": 30.8,
+     "text": "You're made of it.",
+     "style": "gold",
+     "size": 104,
+     "maxw": 820
+    }
+   ]
+  },
+  {
+   "t0": 35.6,
+   "t1": 39.3,
+   "outro": true,
+   "line": "Look up once in a while."
+  }
+ ]
+}
