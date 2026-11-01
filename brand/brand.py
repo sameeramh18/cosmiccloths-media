@@ -20,7 +20,7 @@ def font(size, weight=600):
 
 def kannada(size, weight=700):
     f = ImageFont.truetype(os.path.join(GF, 'notosanskannada', 'NotoSansKannada[wdth,wght].ttf'), size)
-    f.set_variation_by_axes([100, max(100, min(900, weight))])
+    f.set_variation_by_axes([max(100, min(900, weight)), 100])
     return f
 
 _MARK = Image.open(os.path.join(HERE, 'cosmiccloths-mark-1024.png')).convert('RGBA')
